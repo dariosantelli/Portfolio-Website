@@ -14,13 +14,34 @@
 			<p>Dario Santelli</p>
 		</div>
 		
-		<div id = "projects" class = "project-title">
-			<p>Projects</p>
-			
-			<div id = "project1" class = "project">
+		<div id = "projects" class = "project-container">
+		
+			<div id = "projects" class = "project-title">
+				<p>Projects</p>
 			</div>
 			
+			<div id = "project1" class = "project">
+				<h1>Project Title #1</h1>
+				<p>This is going to be the project text for the first project. It will be a brief description of what that specific project is about.</p>
+				
+				<button type="button" class="collapsible-button">Expand</button>
+				<div class="collapsible-content">
+				  <p>Lorem ipsum...</p>
+				</div>
+			
+			<!--
+			- have a brief description of project and a picture or two
+			- have an expand tab that shows more screenshots and info
+			- have technologies utilized
+			-->
+			</div>
+			
+			<br>
+			
 			<div id = "project2" class = "project">
+				<h1>Project Title #2</h1>
+				<p>This is going to be the project text for the first project. It will be a brief description of what that specific project is about.</p>
+			
 			</div>
 			
 		</div>
@@ -40,4 +61,20 @@
 				<a href="https://www.linkedin.com/in/dariosantelli/" class="button">LinkedIn</a>
 			</div>
 		</div>
+	<script>
+	var coll = document.getElementsByClassName("collapsible-button");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		}
+	  });
+	}
+	</script>
 	</body>
