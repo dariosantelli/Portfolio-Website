@@ -1,17 +1,28 @@
 {% load static %}
 <head>
 	<title>Dario Santelli</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
 	</head>
 	<body>
 		<div class="navigation-bar">
 			<a href="#projects">Projects</a>
-			<a href="#work_experience">Work Experience</a>
-			<a href="#contact">Contact</a>
+			<a href="#about-me">About Me</a>
 		</div>
 		
-		<div class = "fixed">
-		<p>testing</p>
+		<div class = "sidebar">
+		
+			<div id = "resume" class = "resume">
+				<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0">Resume</a>
+			</div>
+		
+			<div style="text-align:center">
+				<a href="https://github.com/dariosantelli" class="button">GitHub</a>
+			</div>
+			
+			<div style="text-align:center">
+				<a href="https://www.linkedin.com/in/dariosantelli/" class="button">LinkedIn</a>
+			</div>
+			
 		</div>
 		
 		<div class = "large-name">
@@ -25,12 +36,22 @@
 			</div>
 			
 			<div id = "project1" class = "project">
-				<h1>Project Title #1</h1>
-				<p>This is going to be the project text for the first project. It will be a brief description of what that specific project is about.</p>
+				<div id = "project1-left" class = "project-left">
+					<img src = "{% static 'portfolio/images/project_test_image.PNG' %}" alt = "alternatetext" class = "image-resize">
+				</div>
 				
+				<div id = "project1-right" class = "project-right">
+					<h1>Meal Preparation Organizer Application</h1>
+					<p>A lightweight console application to track meal preparation recipes</p>
+					
+				</div>
 				<button type="button" class="collapsible-button">Expand</button>
-				<div class="collapsible-content">
-				  <p>Lorem ipsum...</p>
+				
+				<div id = "project1-expanded-content" class="collapsible-content">
+				  <p>- Easily view, add, and edit recipes using console text interface</p>
+				  <p>- Uses custom text file format for data storage</p>
+				  <p>- Written in C++</p>
+					
 				</div>
 			
 			<!--
@@ -43,12 +64,45 @@
 			<br>
 			
 			<div id = "project2" class = "project">
-				<h1>Project Title #2</h1>
-				<p>This is going to be the project text for the first project. It will be a brief description of what that specific project is about.</p>
+				<h1>Stock-Tracking Application</h1>
+				<p>A GUI desktop application that tracks various stock attributes</p>
 			
 				<button type="button" class="collapsible-button">Expand</button>
 				<div class="collapsible-content">
-				  <p>Lorem ipsum...</p>
+				  <p>- View information about any stock ticker by adding up to six information tiles</p>
+				  <p>- Access data from various timeframes</p>
+				  <p>- Utilizes a real-time stock API to get the most up to date information</p>
+				  <p>- Written in Java using the JavaFX GUI framework</p>
+				</div>
+				
+				
+			</div>
+			
+			<br>
+			
+			<div id = "project3" class = "project">
+				<h1>Budget-Tracker Web Application</h1>
+				<p>A small interface on my website that takes budget-related entries and stores them in a database</p>
+			
+				<button type="button" class="collapsible-button">Expand</button>
+				<div class="collapsible-content">
+				  <p>- Enter an item name, price, and category and save it in a hosted database</p>
+				  <p>- Uses AWS RDS, Python, and PostgreSQL</p>
+				</div>
+				
+				
+			</div>
+			
+			<br>
+			
+			<div id = "project4" class = "project">
+				<h1>Portfolio Website</h1>
+				<p>My personal website built with Django and hosted entirely on Amazon Web Services</p>
+			
+				<button type="button" class="collapsible-button">Expand</button>
+				<div class="collapsible-content">
+				  <p>- Uses AWS Elastic Beanstalk and AWS Route 53 for hosting and DNS routing</p>
+				  <p>- Written in Python, JavaScript, HTML, and CSS</p>
 				</div>
 				
 				
@@ -56,20 +110,9 @@
 			
 		</div>
 				
-		<div id = "resume" class = "resume">
-			<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0">Full Resume</a>
-		</div>
-		
-		<div class="vertical-align">
-			<div style="text-align:center">
-				<a href="https://github.com/dariosantelli" class="button">GitHub</a>
-			</div>
-			<div style="text-align:center">
-				<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0" class="button">Resume</a>
-			</div>
-			<div style="text-align:center">
-				<a href="https://www.linkedin.com/in/dariosantelli/" class="button">LinkedIn</a>
-			</div>
+		<div id = "about-me" class = "about-me-container">
+			<p>This is my bio! I hope you like it.</p>
+			<img src = "{% static 'portfolio/images/profile.jpg' %}" alt = "alternatetext" class = "image">
 		</div>
 	<script>
 	var coll = document.getElementsByClassName("collapsible-button");

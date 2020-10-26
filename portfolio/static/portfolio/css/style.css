@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  	background-color: #3aafa9;
+  	background-color: #F6F8F9;
 	/*background-image: url("images/backgroundstars.jpg");*/
 }
 
 a:link {
-  color: #17252a;
+  color: #DF7B00;
   text-align: center;
   background-color: transparent;
   text-decoration: none;
@@ -18,7 +18,7 @@ a:link {
 }
 
 a:visited {
-  color: #17252a;
+  color: #DF7B00;
   text-align: center;
   background-color: transparent;
   text-decoration: none;
@@ -27,7 +27,7 @@ a:visited {
 }
 
 a:hover {
-  color: blue;
+  color: #DF7B00;
   background-color: transparent;
   text-decoration: none;
   padding: 14px 16px;
@@ -57,7 +57,7 @@ a:active {
 }
 
 .large-name	p {
-	color: #ffffff;
+	color: #444395;
 	text-align: left;
     font-size: 75px;
 }
@@ -73,29 +73,43 @@ a:active {
 }
 
 .project-title	p {
-	color: #ffffff;
+	color: #03016B;
 	text-align: center;
     font-size: 30px;
 }
 
 .project	{
 	width: 100%;
+	height: 300px;
 	margin: auto;
 	border-style: groove;
+	border-width: medium;
+	border-color: #DF7B00;
+	background-color: #F6F8F9;
 }
 
 .project	h1 {
-	color: #000000;
+	color: #03016B;
 	text-align: left;
     font-size: 30px;
 	padding-left: 20px;
 }
 
 .project	p {
-	color: #ffffff;
+	color: #252A38;
 	text-align: left;
     font-size: 18px;
 	padding-left: 20px;
+}
+
+.project-left	{
+	float: left;
+	width: 33%;
+}
+
+.project-right	{
+	width: 67%;
+	float: right;
 }
 
 .resume	{
@@ -107,7 +121,7 @@ a:active {
 }
 
 .collapsible-button {
-  background-color: red;
+  background-color: #AABCCB;
   width: 100px;
   margin: 0 auto;
   display: block;
@@ -121,25 +135,38 @@ a:active {
   transition: max-height 0.2s ease-out;
 }
 
-.fixed {
-	
+.sidebar {
 	position: fixed;
-	bottom: 0;
-	right: 24;
+	bottom: 25;
+	right: 25;
+}
+
+.about-me-container	{
+	width: 75%;
+	margin: auto;
+}
+
+.image	{
+	max-width:25%;
+	max-height:25%;
+}
+
+.image-resize	{
+	max-width:100%;
+	max-height:100%;
 }
 
 
 
 
-/*
-.vertical-align {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-*/
+
+
+
+
+
+
+
+
 
 .button {
   font-family: "Arial Black", Gadget, sans-serif;
