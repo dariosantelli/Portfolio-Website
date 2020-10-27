@@ -4,23 +4,23 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
 	</head>
 	<body>
-		<div class="navigation-bar">
+		<div id = "navigation-bar" class="navigation-bar">
 			<a href="#projects">Projects</a>
 			<a href="#about-me">About Me</a>
 		</div>
 		
 		<div class = "sidebar">
 		
-			<div id = "resume" class = "resume">
-				<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0">Resume</a>
+			<div id = "resume" class = "symbol-container">
+				<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0"><img src = "{% static 'portfolio/images/resume_symbol.jpg' %}" alt = "alternatetext" class = "image"></a>
 			</div>
 		
-			<div style="text-align:center">
-				<a href="https://github.com/dariosantelli" class="button">GitHub</a>
+			<div class = "symbol-container">
+				<a href="https://github.com/dariosantelli" class="button"><img src = "{% static 'portfolio/images/github_symbol.webp' %}" alt = "alternatetext" class = "image"></a>
 			</div>
 			
-			<div style="text-align:center">
-				<a href="https://www.linkedin.com/in/dariosantelli/" class="button">LinkedIn</a>
+			<div class = "symbol-container">
+				<a href="https://www.linkedin.com/in/dariosantelli/" class="button"><img src = "{% static 'portfolio/images/linkedin_symbol.png' %}" alt = "alternatetext" class = "image"></a>
 			</div>
 			
 		</div>
@@ -41,8 +41,14 @@
 				</div>
 				
 				<div id = "project1-right" class = "project-right">
-					<h1>Meal Preparation Organizer Application</h1>
-					<p>A lightweight console application to track meal preparation recipes</p>
+					<div id = "project1-right-top" class = "project-right-top">
+						<h1>Meal Preparation Organizer Application</h1>
+					
+					</div>
+					<div id = "project1-right-top" class = "project-right-top">
+						<p>A lightweight console application to track meal preparation recipes</p>
+					
+					</div>
 					
 				</div>
 				<button type="button" class="collapsible-button">Expand</button>
@@ -53,6 +59,8 @@
 				  <p>- Written in C++</p>
 					
 				</div>
+				
+				
 			
 			<!--
 			- have a brief description of project and a picture or two
