@@ -9,21 +9,7 @@
 			<a href="#about-me">About Me</a>
 		</div>
 		
-		<div class = "sidebar">
-		
-			<div id = "resume" class = "symbol-container">
-				<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0"><img src = "{% static 'portfolio/images/resume_symbol.jpg' %}" alt = "alternatetext" class = "image"></a>
-			</div>
-		
-			<div class = "symbol-container">
-				<a href="https://github.com/dariosantelli" class="button"><img src = "{% static 'portfolio/images/github_symbol.webp' %}" alt = "alternatetext" class = "image"></a>
-			</div>
-			
-			<div class = "symbol-container">
-				<a href="https://www.linkedin.com/in/dariosantelli/" class="button"><img src = "{% static 'portfolio/images/linkedin_symbol.png' %}" alt = "alternatetext" class = "image"></a>
-			</div>
-			
-		</div>
+
 		
 		<div class = "large-name">
 			<p>Dario Santelli</p>
@@ -119,9 +105,32 @@
 		</div>
 				
 		<div id = "about-me" class = "about-me-container">
-			<p>This is my bio! I hope you like it.</p>
-			<img src = "{% static 'portfolio/images/profile.jpg' %}" alt = "alternatetext" class = "image">
+		
+			<div class = "about-me-text"
+				<p>This is my bio! I hope you like it.</p>
+			</div>
+			
+			<div class = "about-me-right">
+				<img src = "{% static 'portfolio/images/profile.jpg' %}" alt = "alternatetext" class = "about-me-image">
+			</div>
+			
 		</div>
+		
+		<div class = "symbols-container">
+		
+			<div id = "resume" class = "symbol1">
+				<a href="https://www.dropbox.com/s/79uhpx3223hvgl4/DSResume_10-4-2020.pdf?dl=0"><img src = "{% static 'portfolio/images/resume_symbol.jpg' %}" alt = "alternatetext" class = "symbol-sizing"></a>
+			</div>
+		
+			<div class = "symbol2">
+				<a href="https://github.com/dariosantelli" class="button"><img src = "{% static 'portfolio/images/github_symbol.webp' %}" alt = "alternatetext" class = "symbol-sizing"></a>
+			</div>
+			
+			<div class = "symbol3">
+				<a href="https://www.linkedin.com/in/dariosantelli/" class="button"><img src = "{% static 'portfolio/images/linkedin_symbol.png' %}" alt = "alternatetext" class = "symbol-sizing"></a>
+			</div>
+		</div>
+		
 	<script>
 	var coll = document.getElementsByClassName("collapsible-button");
 	var i;
