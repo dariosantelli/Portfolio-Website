@@ -116,6 +116,18 @@ body {
 	float: right;
 }
 
+.project-right-grid	{
+	display: grid;
+	align-content: center;
+	grid-template-rows: 40px 40px;
+	
+}
+
+.item1	{
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
 .project-right-top	{
 	text-align: center;
 	height: 140px;
@@ -195,14 +207,50 @@ body {
 }
 
 
+]
 
 
 
-
-
-
-
-
+.grid-test {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.cell {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.cell-1 {
+  background: deepskyblue;
+}
+.cell-2 {
+  background: orangered;
+}
+.cell-3 {
+  background: royalblue;
+}
+.cell-4 {
+  background: gold;
+}
+.cell-5 {
+  background: blueviolet;
+}
+.cell-6 {
+  background: limegreen;
+}
+.cell-7 {
+  background: coral;
+}
+.cell-8 {
+  background: lightseagreen;
+}
+.cell-9 {
+  background: maroon;
+}
 
 
 

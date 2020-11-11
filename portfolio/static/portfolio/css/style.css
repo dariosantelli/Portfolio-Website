@@ -121,12 +121,18 @@ body {
 	height: 140px;
 }
 
+.project-right-grid	{
+	display: grid;
+	align-content: center;
+	grid-template-rows: 60px 60px 60px 60px 60px;
+	align-items: center;
+}
+
 .collapsible-button {
-  background-color: #AABCCB;
-  width: 100px;
+  background-color: #444395;
+  width: 100%;
   margin: 0 auto;
   display: block;
-  margin-bottom: 10px;
 }
 
 .collapsible-content {
@@ -174,7 +180,6 @@ body {
 	width: 75%;
 	float: left;
 	min-height: 250px;
-	line-height: 250px;
 	text-align: center;
 }
 
@@ -194,10 +199,17 @@ body {
 	max-height:100%;
 }
 
+.cell-text	{
+	background: deepskyblue;
+	text-align: center;
+	height: 60px;
+	vertical-align: bottom;
+}
 
-
-
-
+.cell-text	{
+	text-align: center;
+	vertical-align: bottom;
+}
 
 
 
