@@ -4,7 +4,6 @@ html {
 
 body {
   	background-color: #F6F8F9;
-	/*background-image: url("images/backgroundstars.jpg");*/
 }
 
 #navigation-bar a:link {
@@ -66,15 +65,16 @@ body {
 	margin: auto;
 }
 
-.project-title	{
+.section-title	{
 	width: 75%;
 	margin: auto;
 }
 
-.project-title	p {
+.section-title	h1 {
 	color: #03016B;
 	text-align: center;
     font-size: 30px;
+	font-weight: normal;
 }
 
 .project	{
@@ -115,15 +115,10 @@ body {
 	float: right;
 }
 
-.project-right-top	{
-	text-align: center;
-	height: 140px;
-}
-
 .project-right-grid	{
 	display: grid;
 	align-content: center;
-	grid-template-rows: 60px 60px 60px 60px 60px;
+	grid-template-rows: 52px 65px 65px 65px 52px;
 	align-items: center;
 }
 
@@ -200,9 +195,20 @@ body {
 	text-align: center;
 }
 
+.about-me-text p	{
+	font-size: 22px;
+}
+
 .about-me-right	{
 	width: 25%;
 	float: left;
+}
+
+.about-me-grid	{
+	display: grid;
+	align-content: center;
+	grid-template-rows: 70px 100px 70px;
+	align-items: center;
 }
 
 .about-me-image	{
@@ -216,22 +222,63 @@ body {
 	max-height:100%;
 }
 
-.cell-text	{
-	background: deepskyblue;
+
+@media only screen and (max-width: 600px) {
+	.project-container	{
+	width: 95%;
+	margin: auto;
+	}
+	
+	.about-me-container	{
+	width: 95%;
+	margin: auto;
+	min-height: 250px;
+	padding-top: 25px;
+	}
+	
+	.about-me-text	{
+	width: 100%;
+	float: left;
+	min-height: 250px;
 	text-align: center;
-	height: 60px;
-	vertical-align: bottom;
+	}
+	
+	.about-me-right	{
+	width: 25%;
+	float: left;
+	display: none;
+	}
+	
 }
 
-.cell-text	{
-	text-align: center;
-	vertical-align: bottom;
+@media only screen and (max-width: 1030px) {
+	.project-left	{
+		display: none;
+	}
+	
+	.project-right	{
+	text-align: left;
+	height: 300px;
+	width: 100%;
+	float: left;
+	}
+	
+	.project-right-grid	{
+	display: grid;
+	align-content: center;
+	grid-template-rows: 52px 65px 65px 65px 52px;
+	align-items: center;
+	}
 }
-
-
-
-
-
+/*
+@media only screen and (min-width: 768px) {
+	.project-left	{
+		height: 600px;
+		float: left;
+		width: 33%;
+	}
+}
+*/
 
 
 
