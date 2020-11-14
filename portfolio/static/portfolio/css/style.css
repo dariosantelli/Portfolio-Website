@@ -79,12 +79,12 @@ body {
 
 .project	{
 	width: 100%;
-	min-height: 300px;
 	margin: auto;
 	border-style: groove;
 	border-width: medium;
 	border-color: #DF7B00;
 	background-color: #F6F8F9;
+	height: max-content;
 }
 
 .project	h1 {
@@ -118,7 +118,7 @@ body {
 .project-right-grid	{
 	display: grid;
 	align-content: center;
-	grid-template-rows: 52px 65px 65px 65px 52px;
+	grid-auto-rows: minmax(min-content, max-content);
 	align-items: center;
 }
 
@@ -155,10 +155,12 @@ body {
 }
 
 .symbols-container {
-	width: 35%;
+	width: 40%;
 	margin: auto;
 	text-align: center;
-	padding: 40px 0px 100px 0px;
+	min-width: 400px;
+	margin-top: 30px;
+	padding-bottom: 60px;
 }
 
 .symbol1	{
@@ -199,16 +201,11 @@ body {
 	font-size: 22px;
 }
 
-.about-me-right	{
-	width: 25%;
-	float: left;
-}
-
 .about-me-grid	{
 	display: grid;
 	align-content: center;
-	grid-template-rows: 70px 100px 70px;
 	align-items: center;
+	grid-auto-rows: minmax(min-content, max-content);
 }
 
 .about-me-image	{
@@ -243,12 +240,6 @@ body {
 	text-align: center;
 	}
 	
-	.about-me-right	{
-	width: 25%;
-	float: left;
-	display: none;
-	}
-	
 }
 
 @media only screen and (max-width: 1030px) {
@@ -261,43 +252,37 @@ body {
 	height: 300px;
 	width: 100%;
 	float: left;
+	height: max-content;
 	}
 	
 	.project-right-grid	{
 	display: grid;
 	align-content: center;
-	grid-template-rows: 52px 65px 65px 65px 52px;
+	grid-auto-rows: minmax(min-content, max-content);
 	align-items: center;
 	}
+	
+	.about-me-text	{
+	width: 100%;
+	min-height: 250px;
+	text-align: center;
+	}
+	
+	.about-me-right	{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:auto;
+	}
+	
 }
-/*
-@media only screen and (min-width: 768px) {
-	.project-left	{
-		height: 600px;
-		float: left;
-		width: 33%;
+
+
+@media only screen and (min-width: 1030px) {
+	.about-me-right	{
+	width: 25%;
+	float: left;
+	overflow:auto;
 	}
 }
-*/
 
-
-
-.button {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 26px;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: none;
-  background-color: #ffffff;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  /*border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;*/
-}
