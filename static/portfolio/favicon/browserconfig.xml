@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="C:\Users\dario\Dropbox\My PC (DESKTOP-17U9VBJ)\Documents\Web_Development\Portfolio_Website\portfolio\static\portfolio\favicon/mstile-150x150.png"/>
+            <TileColor>#da532c</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
